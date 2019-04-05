@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IPL PROJECT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="plottingCharts.js"></script>
+  <!--High Chart Script-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+</head>
+<body background="ipl_logo.gif"> 
+
+<div class="container" style="margin:5px">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#matchCounts">Match Count</button>
+  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#winCount">Win Count</button>
+  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#extraCount">Extras Count</button>
+  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#economicalBowler">Economical Bowler</button>
+  <!-- Modal Match Count-->
+  <div class="modal fade" id="matchCounts" role="dialog" >
+    <div class="modal-dialog modal-sm"  style="width:80%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div id="matchCount"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Win Count-->
+  <div class="modal fade" id="winCount" role="dialog" >
+    <div class="modal-dialog modal-sm"  style="width:80%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div id="winningCount"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Extra Runs Count-->
+  <div class="modal fade" id="extraCount" role="dialog" >
+    <div class="modal-dialog modal-sm"  style="width:80%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div id="extrasCount"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Economical Bowler-->
+  <div class="modal fade" id="economicalBowler" role="dialog" >
+    <div class="modal-dialog modal-sm"  style="width:80%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div id="economicalBowlers"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
